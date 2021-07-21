@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ild</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<script src="js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="container">
+		<section class="intro">
+			 <p class="intro-title">Hi, my name is Ildebrando. I'm a web developer based in Venezuela</p>
+
+			 <nav class="link-section">
+				 <ul class="link-section-links">
+					 <li class="link">
+						 <a href="https://github.com/ildebr"><img src="img/github.svg" alt=""></a>
+					 </li>
+					 <li class="link">
+						<a href="mailto:ildebrandoefrain@gmail.com" target="_blank" ><img src="img/mail.svg" alt=""></a>
+					</li>
+				 </ul>
+			 </nav>
+		</section>
+		<main class="projects-area">
+			 <h2 class="title">Projects</h2>
+
+			 <div class="projects">
+				 <div class="project" data-aos="fade-right">
+					 <a href="#" class="link-image-container">
+						<div class="project-image b-track"></div>
+					 </a>
+					 <div class="text-section">
+						 <h3 class="project-title"><a href="#">Bike store</a></h3>
+
+						 <p class="project-description">Landing page made for a fake online bike store.</p>
+
+						<p class="project-professional-description">
+							Html, css (sass), and javascript.
+						</p>
+
+						<a href="#" class="github-link">
+							<img src="img/github.svg" alt="">
+						</a>
+					 </div>
+
+					 
+				 </div>
+
+				 <div class="project" data-aos="fade-right">
+					<a href="#" class="link-image-container">
+					   <div class="project-image silla"></div>
+					</a>
+					<div class="text-section">
+						<h3 class="project-title"><a href="#">Chairs</a></h3>
+
+						<p class="project-description">This a small page explaining the evolution of chair.</p>
+
+					   <p class="project-professional-description">
+						   Html, css (sass), and javascript.
+					   </p>
+
+					   <a href="#" class="github-link">
+						   <img src="img/github.svg" alt="">
+					   </a>
+					</div>
+				</div>
+
+				<div class="project" data-aos="fade-right">
+					<a href="#" class="link-image-container">
+					   <div class="project-image clothes"></div>
+					</a>
+					<div class="text-section">
+						<h3 class="project-title"><a href="#">Clothing store</a></h3>
+
+						<p class="project-description">Landing page made for a fake online clothes store
+						   called RAGS.</p>
+
+					   <p class="project-professional-description">
+						   Html, css (sass), and javascript.
+					   </p>
+
+					   <a href="#" class="github-link">
+						   <img src="img/github.svg" alt="">
+					   </a>
+					</div>
+				</div>
+			 </div>
+		</main>
+	</div>
+	
+	
+	
+	<script src="js/main.js"></script>
+	<script src="js/aos.js"></script>
+	<script type="text/javascript">
+		AOS.init({
+			offset:90,
+			duration: 800,
+			disable: function(){
+				var minWidth = 100;
+				console.log(window.innerWidth)
+				console.log(window.innerWitdth > minWidth);
+				console.log("aqui");
+				return window.innerWitdth > minWidth;
+			}
+		})
+
+		
+
+		disa = () =>{
+			minWidth = 1090;
+			if(window.innerWidth > minWidth){
+				console.log("aqui2");
+				AOS.init({disable: true});
+				return console.log("verdadero");
+
+			}else if (window.innerWidth < minWidth){
+				
+				AOS.init({disable: false});
+			}
+		}
+
+		disa();
+		$(window).resize(disa);
+		
+	</script>
+	
+</body>
+</html>
