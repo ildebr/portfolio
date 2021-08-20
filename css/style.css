@@ -43,6 +43,72 @@ html {
 div.container {
   width: 100%;
   min-width: 270px;
+  overflow-x: hidden;
+}
+div.container nav.about-barras {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 3;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+div.container nav.about-barras img.barras {
+  height: 20px;
+}
+div.container nav.about-barras .hide {
+  display: none;
+}
+div.container section.more-stuff {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+  position: fixed;
+  padding: 0.5rem 1rem;
+  top: 0;
+  z-index: 2;
+  left: 100vw;
+  transition: 0.5s ease-in;
+}
+div.container section.more-stuff h2.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+}
+div.container section.more-stuff div.sak hr {
+  background-color: black;
+  color: black;
+}
+div.container section.more-stuff div.sak div.boiler-points {
+  margin-bottom: 1rem;
+}
+div.container section.more-stuff div.sak div.boiler-points ul, div.container section.more-stuff div.sak div.boiler-points p {
+  font-size: 1.2rem;
+}
+div.container section.more-stuff div.sak div.boiler-points p.boiler-point {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+div.container section.more-stuff div.sak div.boiler-points p.boiler-point span.level {
+  color: #545454;
+}
+div.container section.more-stuff div.sak div.boiler-points ul li.principal {
+  list-style: none;
+}
+div.container section.more-stuff div.sak div.boiler-points ul li.secondary {
+  margin-left: 1.5rem;
+  color: #545454;
+}
+div.container section.more-stuff div.sak div.boiler-points div.bp-title, div.container section.more-stuff div.sak div.boiler-points div.bp-extra {
+  display: inline-block;
+}
+div.container section.more-stuff div.sak div.boiler-points ul, div.container section.more-stuff div.sak div.boiler-points b.boiler-point {
+  margin-bottom: 0.5rem;
+}
+div.container section.more-stuff.initial-pos {
+  left: 0px;
 }
 div.container section.intro {
   height: 100vh;
@@ -64,7 +130,7 @@ div.container section.intro nav.link-section ul.link-section-links {
   display: flex;
 }
 div.container section.intro nav.link-section ul.link-section-links li.link {
-  height: 30px;
+  height: 15px;
   list-style: none;
   margin: 0 5px;
 }
@@ -72,7 +138,7 @@ div.container section.intro nav.link-section ul.link-section-links li.link a {
   text-decoration: none;
 }
 div.container section.intro nav.link-section ul.link-section-links li.link a img {
-  height: 30px;
+  height: 25px;
 }
 div.container main.projects-area {
   background-color: #ffb24d;
@@ -100,7 +166,13 @@ div.container main.projects-area div.projects div.project div.project-image {
   padding-top: 100%;
   background-color: gray;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+}
+div.container main.projects-area div.projects div.project div.project-image.notas {
+  background-image: url(../img/notas.png);
+}
+div.container main.projects-area div.projects div.project div.project-image.junji {
+  background-image: url(../img/junji.png);
 }
 div.container main.projects-area div.projects div.project div.project-image.b-track {
   background-image: url(../img/bike.png);
@@ -111,9 +183,6 @@ div.container main.projects-area div.projects div.project div.project-image.sill
 div.container main.projects-area div.projects div.project div.project-image.clothes {
   background-image: url(../img/clothes.png);
   background-position: top;
-}
-div.container main.projects-area div.projects div.project div.project-image.junji {
-  background-image: url(../img/junji.png);
 }
 div.container main.projects-area div.projects div.project div.text-section h3.project-title {
   font-size: 1.6rem;
