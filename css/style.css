@@ -184,6 +184,10 @@ div.container main.projects-area div.projects div.project div.project-image.clot
   background-image: url(../img/clothes.png);
   background-position: top;
 }
+div.container main.projects-area div.projects div.project div.project-image.photographers {
+  background-image: url(../img/photographers.png);
+  background-position: center;
+}
 div.container main.projects-area div.projects div.project div.text-section h3.project-title {
   font-size: 1.6rem;
   margin: 0.5rem 0;
