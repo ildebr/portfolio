@@ -75,53 +75,7 @@ div.container section.more-stuff {
   overflow: scroll;
   min-width: 300px;
   overflow-x: hidden;
-  /*
-  h2.title{
-  	margin-bottom: 1.5rem;
-  	font-size: 1.7rem;
-  }
-
-  div.sak{
-  	hr{
-  		background-color: black;
-  		color: black;
-  	}
-
-  	div.boiler-points{
-  		margin-bottom: 1rem;
-
-  		ul,p{
-  			font-size: 1.2rem;
-  		}
-
-  		p.boiler-point{
-  			margin-left: 1rem;
-  			font-weight: 700;
-  			span.level{
-  				color: #545454;
-  			}
-  		}
-
-  		ul{
-  			li.principal{
-  				list-style: none;
-  			}
-  			li.secondary{
-  				margin-left: 1.5rem;
-  				color: #545454;
-  			}
-  		}
-  		div.bp-title, div.bp-extra{
-  			display: inline-block;
-
-  		}
-
-  		ul, b.boiler-point{
-  			margin-bottom: 0.5rem;
-  		}
-  	}
-  }*/
-}
+  
 div.container section.more-stuff div.sec {
   margin: 2rem 0;
 }
@@ -242,6 +196,11 @@ div.container main.projects-area div.projects div.project div.project-image.sill
 div.container main.projects-area div.projects div.project div.project-image.clothes {
   background-image: url(../img/clothes.png);
   background-position: top;
+}
+  
+div.container main.projects-area div.projects div.project div.project-image.photographers {
+  background-image: url(../img/photographers.png);
+  background-position: center;
 }
 div.container main.projects-area div.projects div.project div.text-section h3.project-title {
   font-size: 1.6rem;
