@@ -72,40 +72,99 @@ div.container section.more-stuff {
   z-index: 2;
   left: 100vw;
   transition: 0.5s ease-in;
+  overflow: scroll;
+  min-width: 300px;
+  overflow-x: hidden;
+  /*
+  h2.title{
+  	margin-bottom: 1.5rem;
+  	font-size: 1.7rem;
+  }
+
+  div.sak{
+  	hr{
+  		background-color: black;
+  		color: black;
+  	}
+
+  	div.boiler-points{
+  		margin-bottom: 1rem;
+
+  		ul,p{
+  			font-size: 1.2rem;
+  		}
+
+  		p.boiler-point{
+  			margin-left: 1rem;
+  			font-weight: 700;
+  			span.level{
+  				color: #545454;
+  			}
+  		}
+
+  		ul{
+  			li.principal{
+  				list-style: none;
+  			}
+  			li.secondary{
+  				margin-left: 1.5rem;
+  				color: #545454;
+  			}
+  		}
+  		div.bp-title, div.bp-extra{
+  			display: inline-block;
+
+  		}
+
+  		ul, b.boiler-point{
+  			margin-bottom: 0.5rem;
+  		}
+  	}
+  }*/
 }
-div.container section.more-stuff h2.title {
-  margin-bottom: 1.5rem;
-  font-size: 1.7rem;
+div.container section.more-stuff div.sec {
+  margin: 2rem 0;
 }
-div.container section.more-stuff div.sak hr {
-  background-color: black;
-  color: black;
-}
-div.container section.more-stuff div.sak div.boiler-points {
-  margin-bottom: 1rem;
-}
-div.container section.more-stuff div.sak div.boiler-points ul, div.container section.more-stuff div.sak div.boiler-points p {
-  font-size: 1.2rem;
-}
-div.container section.more-stuff div.sak div.boiler-points p.boiler-point {
+div.container section.more-stuff div.sec > * {
   margin-left: 1rem;
-  font-weight: 700;
 }
-div.container section.more-stuff div.sak div.boiler-points p.boiler-point span.level {
-  color: #545454;
+div.container section.more-stuff div.sec h2 {
+  margin-left: 0;
+  font-size: 2rem;
+  color: #0dadff;
+  font-family: sans-serif;
 }
-div.container section.more-stuff div.sak div.boiler-points ul li.principal {
+div.container section.more-stuff div.sec h2::after {
+  content: "";
+  width: 103px;
+  height: 10px;
+  background: #ffb24d;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+div.container section.more-stuff div.sec:hover h2::after {
+  width: 150px;
+}
+div.container section.more-stuff div.sec h3 {
+  color: #444;
+}
+div.container section.more-stuff div.sec#technical ul li {
   list-style: none;
 }
-div.container section.more-stuff div.sak div.boiler-points ul li.secondary {
-  margin-left: 1.5rem;
-  color: #545454;
+div.container section.more-stuff div.sec#technical ul li h3, div.container section.more-stuff div.sec#technical ul li h4, div.container section.more-stuff div.sec#technical ul li h5 {
+  display: inline;
 }
-div.container section.more-stuff div.sak div.boiler-points div.bp-title, div.container section.more-stuff div.sak div.boiler-points div.bp-extra {
-  display: inline-block;
+div.container section.more-stuff div.sec#technical ul li h5 {
+  color: #777;
 }
-div.container section.more-stuff div.sak div.boiler-points ul, div.container section.more-stuff div.sak div.boiler-points b.boiler-point {
-  margin-bottom: 0.5rem;
+div.container section.more-stuff div.sec#language ul li {
+  list-style: none;
+}
+div.container section.more-stuff div.sec#resume p a {
+  color: #ffb24d;
 }
 div.container section.more-stuff.initial-pos {
   left: 0px;
@@ -184,10 +243,6 @@ div.container main.projects-area div.projects div.project div.project-image.clot
   background-image: url(../img/clothes.png);
   background-position: top;
 }
-div.container main.projects-area div.projects div.project div.project-image.photographers {
-  background-image: url(../img/photographers.png);
-  background-position: center;
-}
 div.container main.projects-area div.projects div.project div.text-section h3.project-title {
   font-size: 1.6rem;
   margin: 0.5rem 0;
@@ -218,6 +273,36 @@ div.container main.projects-area div.projects div.project div.text-section a.git
   div.container main.projects-area div.projects div.project div.text-section a.github-link {
     bottom: unset;
     top: 5px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  div.container section.more-stuff {
+    padding: 1.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 650px) {
+  div.container section.more-stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.container section.more-stuff div.sec {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100%;
+    margin: 4rem 0;
+    max-width: 700px;
+  }
+  div.container section.more-stuff div.sec:first-of-type {
+    margin-top: 3rem;
+  }
+  div.container section.more-stuff div.sec h2 {
+    grid-column: 1/4;
+    height: fit-content;
+  }
+  div.container section.more-stuff div.sec > ul, div.container section.more-stuff div.sec > h3, div.container section.more-stuff div.sec > p {
+    grid-column: 4/-1;
   }
 }
 @media only screen and (min-width: 500px) {
