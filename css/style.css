@@ -198,6 +198,16 @@ div.container main.projects-area div.projects div.project div.project-image.clot
   background-image: url(../img/clothes.png);
   background-position: top;
 }
+div.container main.projects-area div.projects div.project div.project-image.codewell {
+  background-image: url(../img/codewell.png);
+  background-position: top;
+}
+
+div.container main.projects-area div.projects div.project div.project-image.zaha {
+  background-image: url(../img/zaha.png);
+  background-position: center;
+}
+
 div.container main.projects-area div.projects div.project div.project-image.photographers {
   background-image: url(../img/photographers.png);
   background-position: top;
