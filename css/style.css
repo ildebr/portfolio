@@ -212,6 +212,11 @@ div.container main.projects-area div.projects div.project div.project-image.phot
   background-image: url(../img/photographers.png);
   background-position: top;
 }
+
+div.container main.projects-area div.projects div.project div.project-image.shopping-cart {
+  background-image: url(../img/shopping-cart.png);
+  background-position: top;
+}
 div.container main.projects-area div.projects div.project div.project-image.pokeapi {
   background-image: url(../img/pokeapi.png);
   background-position: top;
