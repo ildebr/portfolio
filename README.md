@@ -1,4 +1,4 @@
 # Portfolio
-This is my personal portfolio where I have uploaded some personal projects I have done to show what I can do. 
+This is my personal portfolio it was designed and code by me using html markup and the css preprocessor sass for styling.
 
-See it live at https://ildebr.github.io/portfolio/
+Watch it live at https://ildebr.github.io/portfolio/
