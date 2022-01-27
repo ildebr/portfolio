@@ -158,6 +158,8 @@ div.container main.projects-area {
   background-color: #ffb24d;
   padding: 1rem;
 }
+
+
 div.container main.projects-area h2.title {
   margin: 1rem 0rem 2rem;
   color: black;
@@ -202,7 +204,10 @@ div.container main.projects-area div.projects div.project div.project-image.code
   background-image: url(../img/codewell.png);
   background-position: top;
 }
-
+div.container main.projects-area div.projects div.project div.project-image.simplePractice {
+  background-image: url(../img/simplePractice.png);
+  background-position: top;
+}
 div.container main.projects-area div.projects div.project div.project-image.zaha {
   background-image: url(../img/zaha.png);
   background-position: center;
