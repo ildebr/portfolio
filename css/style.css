@@ -226,6 +226,12 @@ div.container main.projects-area div.projects div.project div.project-image.poke
   background-image: url(../img/poke-api.png);
   background-position: top;
 }
+
+div.container main.projects-area div.projects div.project div.project-image.gotruster {
+  background-image: url(../img/gotruster.png);
+  background-position: top;
+}
+
 div.container main.projects-area div.projects div.project div.text-section h3.project-title {
   font-size: 1.6rem;
   margin: 0.5rem 0;
@@ -325,7 +331,7 @@ div.container main.projects-area div.projects div.project div.text-section a.git
     margin: 0;
   }
   div.container main.projects-area div.projects div.project div.text-section h3.project-title a:hover {
-    color: #222;
+    color: #03a9f4;
   }
   div.container main.projects-area div.projects div.project div.text-section p.project-description {
     grid-row: 2;
