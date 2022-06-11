@@ -379,8 +379,8 @@ div.container main.projects-area div.projects div.project div.text-section a.git
 
 .circle{
   position: absolute;
-  top: -25%;
-  left: -8%;
+  z-index: 100;
+  transform: translate(5%, 5%);
 }
 
 .circle-inner{
@@ -391,6 +391,14 @@ div.container main.projects-area div.projects div.project div.text-section a.git
       display: flex;
       justify-content: center;
       align-items: center;
+}
+
+.circle-inner p{
+  max-width: 500px;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Aller_bd", serif;
 }
 
 .text p span{
