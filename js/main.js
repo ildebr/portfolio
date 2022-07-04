@@ -4,6 +4,14 @@ $("nav.about-barras").click(function(){
     ////$("section.more-stuff>h2.title").attr('data-aos', 'fade-right')
 })
 
+function toggleClass(){
+    var ele = document.querySelector("section.more-stuff")
+    var ele2 = document.querySelector("img.barras")
+
+    ele.classList.toggle("initial-pos")
+    ele2.classList.toggle("hide")
+}
+
 //$("nav.about-barras").click();
 
 const text = document.querySelector('.text p');
