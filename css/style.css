@@ -132,6 +132,7 @@ div.container section.intro {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  z-index: 100;
 }
 div.container section.intro .intro-title p{
   max-width: 500px;
@@ -439,6 +440,31 @@ div.container main.projects-area div.projects div.project div.text-section a.git
 @media (max-width: 700px){
   .circle{
     display: none;
+  }
+}
+
+.CV strong{
+  display: none;
+}
+
+@media(max-width: 1090px){
+  .CV{
+    position: fixed;
+    bottom: 25px;
+    right:  25px;
+  }
+
+  .CV a{
+    padding: 0.15rem 0.75rem;
+    background: #0dadff;
+    display: inline-block;
+    border-radius: 101px;
+  }
+
+  .CV a strong{
+    display: inline;
+    color: black;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
