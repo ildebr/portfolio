@@ -209,6 +209,10 @@ div.container main.projects-area div.projects div.project div.project-image.simp
   background-image: url(../img/simplePractice.png);
   background-position: top;
 }
+div.container main.projects-area div.projects div.project div.project-image.formula1 {
+  background-image: url(../img/formula1.png);
+  background-position: top;
+}
 div.container main.projects-area div.projects div.project div.project-image.zaha {
   background-image: url(../img/zaha.png);
   background-position: center;
