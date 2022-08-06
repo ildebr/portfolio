@@ -213,6 +213,10 @@ div.container main.projects-area div.projects div.project div.project-image.form
   background-image: url(../img/formula1.png);
   background-position: top;
 }
+div.container main.projects-area div.projects div.project div.project-image.movie {
+  background-image: url(../img/movie.png);
+  background-position: top;
+}
 div.container main.projects-area div.projects div.project div.project-image.zaha {
   background-image: url(../img/zaha.png);
   background-position: center;
