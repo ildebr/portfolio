@@ -351,11 +351,25 @@ div.container main.projects-area div.projects div.project div.text-section a.git
     align-self: end;
   }
 }
+
+@keyframes movi{
+	0%{
+		background-position: 0px 0px;
+	}
+
+	50%{
+		background-position: -150px -320px;
+	}
+}
 @media only screen and (min-width: 1090px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background: linear-gradient(18deg, rgb(137 240 165) 0%, #ffeb3b 34%, #009688 87%);
+    background-size: 150vw 200vh;
+    animation: movi 7s infinite;
   }
 
   div.container {
@@ -364,6 +378,7 @@ div.container main.projects-area div.projects div.project div.text-section a.git
     display: grid;
     grid-template-columns: repeat(12, minmax(2em, 6.2em));
     width: auto;
+    overflow-y: hidden;
   }
   div.container section.intro {
     grid-row: 1;
