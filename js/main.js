@@ -29,3 +29,17 @@ const onMouseMove = (e) =>{
   circle.style.top = e.pageY + 'px';
 }
 document.addEventListener('mousemove', onMouseMove);
+
+const handleOnMouseMove = e =>{
+    const {currentTarget: target} = e;
+    const react = target.getBoundingClientRect(),
+    x =e.clientX - react.left,
+    y = e.clientY - react.top;
+
+    target.style.setProperty("--mouse-x", `${x}px`);
+    target.style.setProperty("--mouse-y", `${y}px`);
+}
+
+for (const card of document.querySelectorAll(".project")){
+    card.onmousemove = e => handleOnMouseMove(e);
+}
