@@ -209,7 +209,7 @@ div.container main.projects-area div.projects div.project div.project-image {
   background-position: top;
 }
 div.container main.projects-area div.projects div.project div.project-image.notas {
-  background-image: url(../img/notas.png);
+  background-image: url(../img/notes.png);
 }
 div.container main.projects-area div.projects div.project div.project-image.debt {
   background-image: url(../img/debt.png);
@@ -219,6 +219,9 @@ div.container main.projects-area div.projects div.project div.project-image.junj
 }
 div.container main.projects-area div.projects div.project div.project-image.b-track {
   background-image: url(../img/bike.png);
+}
+div.container main.projects-area div.projects div.project div.project-image.chat {
+  background-image: url(../img/chat.png);
 }
 div.container main.projects-area div.projects div.project div.project-image.silla {
   background-image: url(../img/silla.png);
@@ -250,6 +253,19 @@ div.container main.projects-area div.projects div.project div.project-image.zaha
 
 div.container main.projects-area div.projects div.project div.project-image.photographers {
   background-image: url(../img/photographers.png);
+  background-position: top;
+}
+div.container main.projects-area div.projects div.project div.project-image.debt {
+  background-image: url(../img/debtlander1.png);
+  background-position: top;
+}
+
+div.container main.projects-area div.projects div.project div.project-image.debt2 {
+  background-image: url(../img/debtlander2.png);
+  background-position: top;
+}
+div.container main.projects-area div.projects div.project div.project-image.debt3 {
+  background-image: url(../img/debtlander3.png);
   background-position: top;
 }
 
